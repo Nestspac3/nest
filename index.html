@@ -4,47 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nest</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="Nesttab.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="icon" type="image/png" href="NestTab.png">
 </head>
 <body>
-   <a href ="index.html"><div class="logo"><img src="NestLogo.png" alt="" ></div></a> 
-   <header>
-    <ul>  
-        <li><div class="nav-item"></div><a href="AboutUs.html">About us</a></div></li>
-        <li><a href="Approach.html">Our Approach</a></li>
-        <li><a href="Contact.html">Contacts</a></li>        
-    </ul>
+    <a href="index.html" class="logo" aria-label="Nest home">
+        <img src="NestLogo.png" alt="Nest">
+    </a>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="Approach.html">Our Approach</a></li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   </header>
+    <main>
+        <section class="Word" aria-labelledby="home-title">
+            <h1 id="home-title">Nest</h1>
+            <img src="homepic1.jpg" alt="A welcoming learning space">
+            <p class="slogan">SMART CODE. SOLID RESULTS.</p>
+        </section>
 
-<div class="Word">
-    <h1>Nest</h1>
-    <img src="homepic1.jpg" alt="" >>
-    <p><div class="slogan">‎ ‎ ‎ ‎SMART CODE‎ ‎ ‎ ‎ SOLID RESULTS.</div></p>
-    
-</div>
-<hr>
-    
-    <h2><u color="white"><div class="us">Who we are</div></u></h2>
-   <p><div class="content">We are a team of passionate individuals dedicated to providing the best solutions for our clients</div></p>
-   <section class="cards">
-    <div class="card">
-        <img src="homepic2.png" alt="Map of South Africa in the colours of the flag">
-        <h3>Proudly South African</h3>
-        <p>Built here, for the people who live and learn here.</p>
-    </div>
-    <div class="card">
-        <img src="homepic3.png" alt="Puzzle pieces spelling teachers, parents and education">
-        <h3>Everyone plays a part</h3>
-        <p>Teachers and parents working together for better education.</p>
-    </div>
-    <div class="card">
-        <img src="homepic4.png" alt="Handprint with the words Every Child Matters">
-        <h3>Every child matters</h3>
-        <p>Our work always starts with the learner.</p>
-    </div>
-</section>
-   
+        <section class="about" aria-labelledby="who-we-are">
+            <h2 id="who-we-are" class="us">Who we are</h2>
+            <p class="content">We are a team of passionate individuals dedicated to providing the best solutions for our clients.</p>
+            <div class="cards">
+                <article class="card">
+                    <img src="homepic2.png" alt="Map of South Africa in the colours of the flag">
+                    <h3>Proudly South African</h3>
+                    <p>Built here, for the people who live and learn here.</p>
+                </article>
+                <article class="card">
+                    <img src="homepic3.png" alt="Puzzle pieces spelling teachers, parents and education">
+                    <h3>Everyone plays a part</h3>
+                    <p>Teachers and parents working together for better education.</p>
+                </article>
+                <article class="card">
+                    <img src="homepic4.png" alt="Handprint with the words Every Child Matters">
+                    <h3>Every child matters</h3>
+                    <p>Our work always starts with the learner.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
