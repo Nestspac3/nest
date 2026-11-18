@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest | Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="icon" type="image/png" href="NestTab.png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="Homepage.html" class="logo"><img src="NestLogo.png" alt="Nest home"></a>
+        <header>
+            <ul>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="Approach.html">Our Approach</a></li>
+                <li><a href="Contact.html" class="active" aria-current="page">Contacts</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <section class="page-hero hero-sage">
+        <h1>Contact Us</h1>
+    </section>
+
+    <main class="form-wrapper">
+        <!-- Replace YOUR_FORM_ID with your Formspree endpoint URL -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+            
+            <div class="contacts">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="contacts">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+27 82 123 4567" required>
+            </div>
+
+            <div class="contacts">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+
+        </form>
+    </main>
+
+</body>
+</html>
