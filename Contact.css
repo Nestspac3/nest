@@ -168,9 +168,30 @@ li a.active { border-bottom: 2px solid var(--olive); }
 @media (max-width: 800px) {
     :root { --section-space: 56px; }
 
-    header ul { gap: 12px; }
-    li a { font-size: 17px; margin-right: 0; }
-    .logo { width: 70px; height: 70px; top: -8px; }
+    header {
+        padding: 12px var(--gutter);
+        gap: 10px;
+    }
+
+    .logo {
+        position: static;
+        width: 52px;
+        height: 52px;
+        max-width: 52px;
+        max-height: 52px;
+        flex-shrink: 0;
+    }
+
+    header ul {
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    li a {
+        font-size: 16px;
+        margin-right: 0;
+    }
 
     .page-hero { padding: 90px var(--gutter) 70px; }
     .page-hero h1 { font-size: 56px; }
@@ -196,12 +217,8 @@ li a.active { border-bottom: 2px solid var(--olive); }
     padding: 28px 24px;
     counter-increment: step;
     transition: filter 0.5s;
-    
 }
-.step:hover{
-        
-    
-}
+
 
 .step::before {
     content: counter(step);
