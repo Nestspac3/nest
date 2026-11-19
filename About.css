@@ -73,7 +73,7 @@ li a:hover {
 li a.active { border-bottom: 2px solid var(--olive); }
 
 .logo {
-    position: absolute;
+    position: static;
     top: -20px;
     left: 1px;
     height: 100px;
