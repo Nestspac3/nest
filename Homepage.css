@@ -1,3 +1,20 @@
+:root {
+    --olive: #666534;
+    --olive-soft: #77756e;
+    --sand: #dddad0;
+    --moss: #cece7b;
+    --black: #000;
+    --forest: #2f3a26;
+    --sage: #a9b58a;
+    --cream: #f0e9d2;
+    --rust: #a35f3b;
+    --white: #fff;
+    --radius: 6px;
+    --gutter: 5%;
+    --section-space: 80px;
+}
+
+html { scroll-behavior: smooth; }
 * {
     margin: 0;
     padding: 0;
