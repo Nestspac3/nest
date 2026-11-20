@@ -43,6 +43,37 @@ body{
     animation: colorPulse 2s ease-in-out infinite ;
     left: 50px;
 }
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; 
+    max-width: 1200px;
+    margin: 0 auto;
+ .slogan {
+    color: #666534;
+    font-size: clamp(1.35rem, 6vw, 2.35rem);
+    font-family: 'Now', sans-serif;
+    margin: -14% 0 0;
+    font-weight: 550;
+    letter-spacing: clamp(2px, 1vw, 6px);
+    position: relative;
+    left: clamp(0px, 4vw, 50px);
+    z-index: 2;
+    -webkit-text-stroke: 1.5px #cece7b;
+    paint-order: stroke fill;
+    animation: colorPulse 2s ease-in-out infinite;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .your-element {
+    /* Adjust pull-up and horizontal offset for narrow viewports */
+    margin-top: -10%;
+    left: 16px;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+  }
 header{
     background: #dddad0;
     padding: 25px 5%;
