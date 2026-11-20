@@ -168,7 +168,6 @@ li a.active { border-bottom: 2px solid var(--olive); }
 @media (max-width: 800px) {
     :root { --section-space: 56px; }
 
-    /* FIX 2: Added mobile padding and gap inside header */
     header {
         padding: 12px var(--gutter);
         gap: 10px;
