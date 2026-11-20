@@ -217,28 +217,31 @@ li a:hover {
     :root { --section-space:56px; }
     
     header {
+        padding: 12px 4%;
+        justify-content: space-between;
+        align-items: center;
         gap :10px;
     }
     
     .logo {
-        display: flex;
-        left: 1px;
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        top: -20px;
-        margin-bottom: 150px;
+        position: static;
+        height: 55px;
+        width: auto;
+        margin-bottom: 0;
+        top: auto;
+        left: auto;
 }
 
     header ul {
-        gap: 10px;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
     }
 
     li a {
-        font-size: 16px;
+        font-size: 14px;
         margin-right: 0;
+        white-space: nowrap;
     }
     .page-hero { padding: 90px var(--gutter) 70px; }
     .page-hero h1 { font-size: 56px; }
