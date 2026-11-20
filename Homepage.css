@@ -93,7 +93,7 @@ li a:hover{
     text-align: right;
 }
 .Word h1{
-    color: #666534;
+    color: #57562C;
     width: 50%;
     font-size: clamp(72px, 17vw, 200px);
     font-weight: bold;
@@ -236,7 +236,8 @@ li a:hover{
 
     .slogan {
         color: #fff;
-        -webkit-text-stroke: 1px #666534;
+        -webkit-text-stroke: 1px #57562C;
+        text-align: right;
     }
 
     .about {
