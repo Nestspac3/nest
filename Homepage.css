@@ -221,13 +221,14 @@ li a:hover {
     }
     
     .logo {
-        position: static;
-        width: 52px;
-        height: 52px;
-        max-width: 52px;
-        max-height: 52px;
-        flex-shrink: 0;
-    }
+        display: flex;
+        left: 1px;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: -20px;
+        margin-bottom: 150px;
+}
 
     header ul {
         gap: 10px;
