@@ -23,120 +23,131 @@
 body{
     background-color: black;
 }
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
 .content {
     text-align: center;
-    color: #dddad0;
-    padding: 12px 20px 32px;
-    font-size: 18px;
+    color: #666534;
+    padding: 20px;
 }
 
 .slogan {
     color: #666534;
-    font-size: clamp(16px, 2.4vw, 30px);
+    font-size: 37,7px;
     font-family: 'Now', sans-serif;
     margin: 0;
     font-weight: 550;
-    letter-spacing: clamp(2px, 0.6vw, 8px);
+    letter-spacing: 8px;
+    margin-top: -26%;
     z-index: 2;
     -webkit-text-stroke: 2px #cece7b;
     paint-order: stroke fill;
-    animation: colorPulse 2s ease-in-out infinite;
-    text-align: center;
+    animation: colorPulse 2s ease-in-out infinite ;
+    left: 50px;
 }
 header{
     background: #dddad0;
-    min-height: 76px;
-    padding: 16px 5% 16px 120px;
+    padding: 25px 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
-
-header nav {
-    flex: 1;
-}
-
 header ul{
+    flex: 1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+ul {
+    display: flex;
     gap: 35px;
 }
-
+li{
+    display: inline-block;
+}
 li a{
     color: #666534;
     font-size: 21px;
     font-weight: bold;
-    transition: color 0.2s ease;
+    margin-right: 10px;
 }
 li a:hover{
     color: white;
-    border-bottom: 1px solid whitesmoke;
-}
+   border-bottom: 1px solid whitesmoke;
+  
 
+}
 .Word {
     background-color: #cece7b;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
-    min-height: min(720px, calc(100vh - 76px));
-    padding: 48px 4%;
-    overflow: hidden;
-    text-align: right;
+    height: 150vh;
 }
 .Word h1{
-    color: #57562C;
-    width: 50%;
-    font-size: clamp(72px, 17vw, 200px);
+    color: #666534;
+    font-size: 250px;
     font-weight: bold;
     z-index: 2;
     animation: colorPulse 2s ease-in-out infinite ;
     position: relative;
+    top: -30%;
     -webkit-text-stroke: 3px #cece7b;
+    font-weight: bold;
 }
 
 
 
 .Word img{
+   
     position: absolute;
-    inset: 0 auto 0 0;
     width: 50%;
     height: 100%;
-    object-fit: cover;
+    left: 0px;
+
+    
+}
+.split{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .logo {
-    position: absolute;
-    top: 0;
-    left: 8px;
-    width: 104px;
-    height: 76px;
-    z-index: 2;
+    display: flex;
+  left: 1px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: -20px;
+    margin-bottom: 150px;
 }
 
-.logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.about {
-    padding: 56px 5% 80px;
+.homepic1 {
+      display: flex;
+  position: absolute;
+  height: 500px;
+  width: 50px;
+  top: 500px;
+  left: 2px;
+    margin-bottom: 150px;
+    
+    
 }
 
 .cards {
     display: flex;
     gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 40px 5% 80px;
 }
 
 .card {
@@ -163,89 +174,19 @@ li a:hover{
     margin-top: 5px;
 }
 
-.us {
-    color: white;
-    text-align: center;
-    font-size: 36px;
-}
-
 @media (max-width: 800px) {
     .cards {
         flex-direction: column;
-    }
-
-    .card img {
-        height: 220px;
-    }
-
-    header {
-        padding-right: 16px;
-        padding-left: 112px;
-    }
-
-    header ul {
-        justify-content: flex-end;
-        gap: 16px;
-    }
-
-    li a {
-        font-size: 17px;
-    }
-
-    .Word {
-        min-height: 600px;
-    }
-}
-
-@media (max-width: 520px) {
-    .logo {
-        width: 80px;
-    }
-
-    header {
-        min-height: 88px;
-        padding: 8px 12px 8px 88px;
-    }
-
-    header ul {
-        flex-wrap: wrap;
-        gap: 4px 14px;
-    }
-
-    li a {
-        font-size: 15px;
-    }
-
-    .Word {
-        min-height: 540px;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 40px 20px 56px;
-    }
-
-    .Word img {
-        width: 100%;
-        height: 65%;
-        bottom: auto;
-    }
-
-    .Word h1 {
-        width: 100%;
-        font-size: clamp(72px, 25vw, 120px);
-    }
-
-    .slogan {
-        color: #fff;
-        -webkit-text-stroke: 1px #57562C;
-        text-align: right;
-    }
-
-    .about {
-        padding: 40px 5% 56px;
     }
 }
 
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.us {
+    color: white;
+    margin-left: 46%;
+    text-underline-position: below;
 }
