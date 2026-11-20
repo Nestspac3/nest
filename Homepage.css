@@ -90,11 +90,11 @@ li a:hover{
     min-height: min(720px, calc(100vh - 76px));
     padding: 48px 4%;
     overflow: hidden;
+    text-align: right;
 }
 .Word h1{
     color: #666534;
     width: 50%;
-    text-align: center;
     font-size: clamp(72px, 17vw, 200px);
     font-weight: bold;
     z-index: 2;
