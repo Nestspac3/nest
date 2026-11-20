@@ -81,7 +81,6 @@ html, body {
     object-fit: cover;
 }
 
-/* Header & Navigation */
 header {
     background: #dddad0;
     padding: 25px 5%;
@@ -153,7 +152,7 @@ li a:hover {
     margin-bottom: 150px;
 }
 
-/* Cards Section */
+
 .cards {
     display: flex;
     gap: 30px;
@@ -195,73 +194,35 @@ li a:hover {
     text-underline-position: below;
 }
 
-/* =========================================
-   MOBILE ONLY (screens 768px and smaller)
-   ========================================= */
-@media (max-width: 768px) {
-    /* Stop .logo from covering "About us" on mobile */
-    .logo {
-        position: static;
-        width: 44px;
-        height: 44px;
-        margin: 0;
-        flex-shrink: 0;
-    }
+@media (max-width: 800px) {
+    :root { --section-space: 56px; }
 
     header {
-        padding: 12px 14px;
+        padding: 12px var(--gutter);
         gap: 10px;
-        justify-content: space-between;
+    }
+
+    .logo {
+        position: static;
+        width: 52px;
+        height: 52px;
+        max-width: 52px;
+        max-height: 52px;
+        flex-shrink: 0;
     }
 
     header ul {
         gap: 10px;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-
     li a {
-        font-size: 13.5px;
+        font-size: 16px;
         margin-right: 0;
-        white-space: nowrap;
     }
 
-    /* Hero section on mobile */
-    .Word {
-        height: 58vh;
-        min-height: 360px;
-        padding: 0 12px;
-    }
+    .page-hero { padding: 90px var(--gutter) 70px; }
+    .page-hero h1 { font-size: 56px; }
 
-    .Word h1 {
-        font-family: "DM Serif Display", Georgia, serif;
-        font-size: 28vw;
-        top: 0;
-        line-height: 1;
-        -webkit-text-stroke: 2px #cece7b;
-    }
-
-    .slogan {
-        font-size: 4.2vw;
-        letter-spacing: 1.5px;
-        margin-top: 10px;
-        left: 0;
-        text-align: center;
-        -webkit-text-stroke: 1px #cece7b;
-    }
-
-    .split {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .cards {
-        flex-direction: column;
-        padding: 25px 5% 50px;
-    }
-
-    .us {
-        margin-left: 0;
-        text-align: center;
-    }
+    .cards { flex-direction: column; }
 }
