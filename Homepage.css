@@ -217,7 +217,6 @@ li a:hover {
     :root { --section-space:56px; }
     
     header {
-        padding: 12px var ( --gutter);
         gap :10px;
     }
     
